@@ -55,7 +55,7 @@ table {
 
 // Variables: color pallette
 @primary-color: #F16664;
-@secondar-color: #FFF6E6;
+@secondary-color: #FFF6E6;
 @accent-color: #007D8C;
 
 // Variables: font family
@@ -69,9 +69,10 @@ html, body {
 }
 
 .container-resume-home{
-	background: @secondar-color;
+	background: @secondary-color;
 	max-width: 880px;
 	margin: 0 auto;
+	font-family: @fonts;
 
 	header {
 	height: 30%;
@@ -82,7 +83,7 @@ html, body {
 		justify-content: flex-end;
 		background: @primary-color;
 		padding: 1.5% 0;
-		border-bottom: 3px solid black;
+		border-bottom: 10px solid white;
 
 		a {
 			padding: 1%;
@@ -90,11 +91,23 @@ html, body {
 			text-align: center;
 			color: @secondary-color;
 			font-size: 1.4rem;
-			font-family: @fonts;
 			text-decoration: none;
 
 			&:hover {background: darken(@primary-color, 2%);}
 			border-radius: 5px;
+		}
+	}
+	.name-divider {
+			
+			border-bottom: 10px solid white;
+
+		h1 {
+			font-size: 8.5rem;
+			text-align: center;
+			padding: 5% 2% 5% 2%;
+			text-transform: uppercase;
+			font-weight: bold;
+			color: darken(@secondary-color, 14%);
 		}
 	}
 	}
