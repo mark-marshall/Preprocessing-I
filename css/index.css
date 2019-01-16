@@ -192,7 +192,7 @@ body {
 }
 @media (max-width: 500px) {
   .container-resume-home header .name-divider h1 {
-    font-size: 6rem;
+    font-size: 4.5rem;
     text-align: left;
   }
 }
@@ -258,7 +258,7 @@ body {
   cursor: pointer;
 }
 .container-resume-home .main-content {
-  padding: 4% 2% 0 2%;
+  padding: 8% 2% 0 2%;
 }
 .container-resume-home .main-content h2 {
   color: #f37d7b;
@@ -268,7 +268,7 @@ body {
 }
 @media (max-width: 500px) {
   .container-resume-home .main-content h2 {
-    padding: 0 2%;
+    font-size: 2rem;
   }
 }
 .container-resume-home .main-content p {
@@ -278,7 +278,7 @@ body {
 }
 @media (max-width: 500px) {
   .container-resume-home .main-content p {
-    padding: 3% 2%;
+    padding: 3% 0.5%;
     line-height: 1.7;
   }
 }
@@ -293,7 +293,8 @@ body {
 }
 @media (max-width: 500px) {
   .container-resume-home .work-exp h2 {
-    padding: 0 2%;
+    font-size: 2rem;
+    padding-top: 5%;
   }
 }
 .container-resume-home .work-exp table {
@@ -335,7 +336,8 @@ body {
 @media (max-width: 500px) {
   .container-resume-home .skills h2 {
     padding-bottom: 5%;
-    padding-top: 1.5%;
+    padding-top: 5%;
+    font-size: 2rem;
   }
 }
 .container-resume-home .skills .skills-list {
@@ -362,6 +364,8 @@ body {
   .container-resume-home .skills .skills-list button {
     width: 100%;
     padding: 3%;
+    font-size: 1.7rem;
+    text-align: left;
   }
 }
 .container-resume-home .contact {
@@ -376,7 +380,8 @@ body {
 }
 @media (max-width: 500px) {
   .container-resume-home .contact h2 {
-    padding-top: 1%;
+    padding-top: 5%;
+    font-size: 2rem;
   }
 }
 .container-resume-home .contact p {
@@ -385,6 +390,6 @@ body {
 }
 @media (max-width: 500px) {
   .container-resume-home .contact p {
-    padding: 4% 0;
+    padding: 4% 0 5% 0;
   }
 }
