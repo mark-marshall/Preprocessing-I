@@ -230,7 +230,7 @@ body {
   padding: 1.5% 0;
 }
 .container-resume-home .work-exp {
-  padding: 2%;
+  padding: 4% 2%;
 }
 .container-resume-home .work-exp h2 {
   color: #f37d7b;
@@ -254,7 +254,7 @@ body {
   text-transform: uppercase;
 }
 .container-resume-home .skills {
-  padding: 2%;
+  padding: 1.5% 2%;
 }
 .container-resume-home .skills h2 {
   color: #f37d7b;
@@ -269,11 +269,25 @@ body {
 }
 .container-resume-home .skills .skills-list button {
   width: 32%;
-  background: #008b9b;
+  background: #f16664;
   padding: 2%;
   border-radius: 2px;
   border: none;
   margin: 0.5%;
   color: #fff6e6;
   font-size: 1.3rem;
+}
+.container-resume-home .contact {
+  padding: 4% 2%;
+  border-bottom: 10px solid white;
+}
+.container-resume-home .contact h2 {
+  color: #f37d7b;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.container-resume-home .contact p {
+  font-size: 1.4rem;
+  padding: 1.5% 0;
 }
