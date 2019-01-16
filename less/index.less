@@ -144,6 +144,20 @@ table {
 
 // Mixins
 
+.h2-styles (){
+	color: lighten(@primary-color, 5%);
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.flex-row {
+	display: flex;
+	flex-direction: row
+}
+
+// End of LESS variables/mixin setouts
+
 html,
 body {
   height: 100%;
@@ -160,7 +174,7 @@ body {
     height: 30%;
 
     nav {
-      display: flex;
+      .flex-row();
       width: 100%;
       justify-content: flex-end;
       background: @primary-color;
@@ -243,10 +257,7 @@ body {
   .main-content {
     padding: 4% 2% 0 2%;
     h2 {
-      color: lighten(@primary-color, 5%);
-      font-size: 1.6rem;
-      text-transform: uppercase;
-      font-weight: bold;
+      .h2-styles();
     }
 
     p {
@@ -259,10 +270,7 @@ body {
   .work-exp {
     padding: 4% 2%;
     h2 {
-      color: lighten(@primary-color, 5%);
-      font-size: 1.6rem;
-      text-transform: uppercase;
-      font-weight: bold;
+	.h2-styles();
     }
     table {
       font-size: 1.4rem;
@@ -287,15 +295,12 @@ body {
 	  padding: 1.5% 2%;
 
 	  h2 {
-		color: lighten(@primary-color, 5%);
-		font-size: 1.6rem;
-		text-transform: uppercase;
-		font-weight: bold;
+		.h2-styles();
 		padding-bottom: 2%;
 	  }
   
 	 .skills-list {
-		 display: flex;
+		 flex-row();
 		 flex-wrap: wrap;
 
 		 button {
@@ -317,10 +322,7 @@ body {
 		border-bottom: 10px solid white;
 
 		h2 {
-			color: lighten(@primary-color, 5%);
-			font-size: 1.6rem;
-			text-transform: uppercase;
-			font-weight: bold;
+		.h2-styles();
 		  }
 		  p {
 			font-size: 1.4rem;

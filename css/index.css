@@ -130,6 +130,10 @@ table {
 * {
   box-sizing: border-box;
 }
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
 html,
 body {
   height: 100%;
@@ -146,6 +150,7 @@ body {
 }
 .container-resume-home header nav {
   display: flex;
+  flex-direction: row;
   width: 100%;
   justify-content: flex-end;
   background: #f16664;
@@ -264,7 +269,6 @@ body {
   padding-bottom: 2%;
 }
 .container-resume-home .skills .skills-list {
-  display: flex;
   flex-wrap: wrap;
 }
 .container-resume-home .skills .skills-list button {
