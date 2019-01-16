@@ -145,11 +145,6 @@ body {
   margin: 0 auto;
   font-family: Consolas, Arial, sans-seriff;
 }
-@media (max-width: 500px) {
-  .container-resume-home {
-    color: red;
-  }
-}
 .container-resume-home header {
   height: 30%;
 }
@@ -164,7 +159,7 @@ body {
 }
 @media (max-width: 500px) {
   .container-resume-home header nav {
-    padding: 4% 0;
+    padding: 4% 2% 4% 0;
   }
 }
 .container-resume-home header nav a {
@@ -175,6 +170,11 @@ body {
   font-size: 1.4rem;
   text-decoration: none;
   border-radius: 5px;
+}
+@media (max-width: 500px) {
+  .container-resume-home header nav a {
+    font-size: 1.6rem;
+  }
 }
 .container-resume-home header nav a:hover {
   background: #f05d5b;
@@ -220,12 +220,23 @@ body {
   justify-content: space-around;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .container-resume-home header .about-introduction .about-introduction-text {
+    align-items: flex-start;
+  }
+}
 .container-resume-home header .about-introduction .about-introduction-text p {
   font-size: 3rem;
   padding: 12% 8% 0 8%;
   line-height: 1.5;
   font-weight: bold;
   color: #f37d7b;
+}
+@media (max-width: 500px) {
+  .container-resume-home header .about-introduction .about-introduction-text p {
+    padding: 8% 4% 4% 3%;
+    font-size: 2.8rem;
+  }
 }
 .container-resume-home header .about-introduction .about-introduction-text button {
   width: 40%;
@@ -236,6 +247,11 @@ body {
   border: none;
   padding: 1% 8%;
   border-radius: 2px;
+}
+@media (max-width: 500px) {
+  .container-resume-home header .about-introduction .about-introduction-text button {
+    margin: 0 0 5% 3%;
+  }
 }
 .container-resume-home header .about-introduction .about-introduction-text button:hover {
   background: #f05856;
@@ -250,10 +266,21 @@ body {
   text-transform: uppercase;
   font-weight: bold;
 }
+@media (max-width: 500px) {
+  .container-resume-home .main-content h2 {
+    padding: 0 2%;
+  }
+}
 .container-resume-home .main-content p {
   font-size: 1.6rem;
   line-height: 1.6;
   padding: 1.5% 0;
+}
+@media (max-width: 500px) {
+  .container-resume-home .main-content p {
+    padding: 3% 2%;
+    line-height: 1.7;
+  }
 }
 .container-resume-home .work-exp {
   padding: 4% 2%;

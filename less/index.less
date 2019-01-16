@@ -172,9 +172,6 @@ body {
   max-width: 880px;
   margin: 0 auto;
   font-family: @fonts;
-  @media(max-width:@phone){
-	  color:red;
-  }
 
   header {
 	height: 30%;
@@ -188,7 +185,7 @@ body {
 	  border-bottom: 10px solid white;
 
 	  @media(max-width:@phone){
-		padding: 4% 0;
+		padding: 4% 2% 4% 0;
 	}
 
       a {
@@ -197,7 +194,11 @@ body {
         text-align: center;
         color: @secondary-color;
         font-size: 1.4rem;
-        text-decoration: none;
+		text-decoration: none;
+		
+		@media(max-width:500px){
+        font-size: 1.6rem;
+		}
 
         &:hover {
           background: darken(@primary-color, 2%);
@@ -245,14 +246,23 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        align-items: center;
+		align-items: center;
+		
+		@media(max-width:@phone){
+			align-items: flex-start;
+		}
 
         p {
           font-size: 3rem;
           padding: 12% 8% 0 8%;
           line-height: 1.5;
           font-weight: bold;
-          color: lighten(@primary-color, 5%);
+		  color: lighten(@primary-color, 5%);
+		  
+		  @media(max-width:@phone){
+			padding: 8% 4% 4% 3%;
+			font-size: 2.8rem;
+		  }
         }
 
         button {
@@ -264,6 +274,10 @@ body {
           border: none;
 		  padding: 1% 8%;
 		  border-radius: 2px;
+
+		  @media(max-width:@phone){
+			  margin: 0 0 5% 3%;
+		  }
 
           &:hover {
             background: darken(@primary-color, 3%);
@@ -277,13 +291,22 @@ body {
   .main-content {
     padding: 4% 2% 0 2%;
     h2 {
-      .h2-styles();
+	  .h2-styles();
+	  
+	  @media(max-width:500px){
+		  padding: 0 2%;
+	  }
     }
 
     p {
       font-size: 1.6rem;
       line-height: 1.6;
-      padding: 1.5% 0;
+	  padding: 1.5% 0;
+	  
+	  @media(max-width:500px){
+		  padding: 3% 2%;
+		  line-height: 1.7;
+	  }
     }
   }
 
