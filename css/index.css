@@ -209,6 +209,7 @@ body {
   font-size: 1.8rem;
   border: none;
   padding: 1% 8%;
+  border-radius: 2px;
 }
 .container-resume-home header .about-introduction .about-introduction-text button:hover {
   background: #f05856;
@@ -251,4 +252,28 @@ body {
   background: #ffdc9f;
   color: #f16664;
   text-transform: uppercase;
+}
+.container-resume-home .skills {
+  padding: 2%;
+}
+.container-resume-home .skills h2 {
+  color: #f37d7b;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-bottom: 2%;
+}
+.container-resume-home .skills .skills-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container-resume-home .skills .skills-list button {
+  width: 32%;
+  background: #008b9b;
+  padding: 2%;
+  border-radius: 2px;
+  border: none;
+  margin: 0.5%;
+  color: #fff6e6;
+  font-size: 1.3rem;
 }
