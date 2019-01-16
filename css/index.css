@@ -119,7 +119,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 table {
@@ -136,7 +136,7 @@ body {
   font-size: 62.5%;
 }
 .container-resume-home {
-  background: #FFF6E6;
+  background: #fff6e6;
   max-width: 880px;
   margin: 0 auto;
   font-family: Consolas, Arial, sans-seriff;
@@ -148,7 +148,7 @@ body {
   display: flex;
   width: 100%;
   justify-content: flex-end;
-  background: #F16664;
+  background: #f16664;
   padding: 1.5% 0;
   border-bottom: 10px solid white;
 }
@@ -156,7 +156,7 @@ body {
   padding: 1%;
   width: 15%;
   text-align: center;
-  color: #FFF6E6;
+  color: #fff6e6;
   font-size: 1.4rem;
   text-decoration: none;
   border-radius: 5px;
@@ -170,8 +170,46 @@ body {
 .container-resume-home header .name-divider h1 {
   font-size: 8.5rem;
   text-align: center;
-  padding: 5% 2% 5% 2%;
+  padding: 6% 2% 5% 2%;
   text-transform: uppercase;
   font-weight: bold;
   color: #ffdc9f;
+}
+.container-resume-home header .profile-picture {
+  width: 300px;
+  height: 500px;
+}
+.container-resume-home header .about-introduction {
+  display: flex;
+  justify-content: space-around;
+}
+.container-resume-home header .about-introduction img {
+  height: 300px;
+  padding: 1%;
+  border-radius: 2px;
+}
+.container-resume-home header .about-introduction .about-introduction-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.container-resume-home header .about-introduction .about-introduction-text p {
+  font-size: 3rem;
+  padding: 12% 8% 0 8%;
+  line-height: 1.5;
+  font-weight: bold;
+  color: #f37d7b;
+}
+.container-resume-home header .about-introduction .about-introduction-text button {
+  width: 40%;
+  margin-bottom: 5%;
+  background: #f16664;
+  color: #fff6e6;
+  font-size: 1.8rem;
+  border: none;
+  padding: 1% 8%;
+}
+.container-resume-home header .about-introduction .about-introduction-text button:hover {
+  background: #ef4f4d;
 }
