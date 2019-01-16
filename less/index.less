@@ -293,7 +293,7 @@ body {
     h2 {
 	  .h2-styles();
 	  
-	  @media(max-width:500px){
+	  @media(max-width:@phone){
 		  padding: 0 2%;
 	  }
     }
@@ -314,11 +314,20 @@ body {
     padding: 4% 2%;
     h2 {
 	.h2-styles();
+
+	@media(max-width:@phone){
+		padding: 0 2%;
+	}
     }
     table {
       font-size: 1.4rem;
       width: 100%;
-      margin-top: 2%;
+	  margin-top: 2%;
+	  
+	  @media(max-width:@phone){
+		  font-size: 1rem;
+		  margin-top: 5%;
+	  }
 
       th,
       td {
@@ -330,6 +339,10 @@ body {
 		background: darken(@secondary-color, 14%);
 		color: @primary-color;
 		text-transform: uppercase;
+
+		@media(max-width:@phone){
+			font-weight: bold;
+		}
 	  }
     }
   }
@@ -340,11 +353,20 @@ body {
 	  h2 {
 		.h2-styles();
 		padding-bottom: 2%;
+
+		@media(max-width:@phone){
+			padding-bottom: 5%;
+			padding-top:1.5%;
+		}
 	  }
   
 	 .skills-list {
 		 .flex-row();
 		 flex-wrap: wrap;
+
+		 @media(max-width:@phone){
+			 flex-direction: column;
+		 }
 
 		 button {
 			 width: 32%;
@@ -355,6 +377,11 @@ body {
 			 margin: 0.5%;
 			 color: @secondary-color;
 			 font-size: 1.3rem;
+
+			 @media(max-width:@phone){
+				 width: 100%;
+				 padding: 3%;
+			 }
 		 }
 	 }
 	  
@@ -366,10 +393,17 @@ body {
 
 		h2 {
 		.h2-styles();
+		@media(max-width:@phone){
+			padding-top: 1%;
+		}
 		  }
 		  p {
 			font-size: 1.4rem;
 			padding: 1.5% 0;
+
+			@media(max-width:@phone){
+				padding: 4% 0;
+			}
 		  }
 	}
 }

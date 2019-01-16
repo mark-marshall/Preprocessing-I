@@ -291,10 +291,21 @@ body {
   text-transform: uppercase;
   font-weight: bold;
 }
+@media (max-width: 500px) {
+  .container-resume-home .work-exp h2 {
+    padding: 0 2%;
+  }
+}
 .container-resume-home .work-exp table {
   font-size: 1.4rem;
   width: 100%;
   margin-top: 2%;
+}
+@media (max-width: 500px) {
+  .container-resume-home .work-exp table {
+    font-size: 1rem;
+    margin-top: 5%;
+  }
 }
 .container-resume-home .work-exp table th,
 .container-resume-home .work-exp table td {
@@ -306,6 +317,11 @@ body {
   color: #f16664;
   text-transform: uppercase;
 }
+@media (max-width: 500px) {
+  .container-resume-home .work-exp table th {
+    font-weight: bold;
+  }
+}
 .container-resume-home .skills {
   padding: 1.5% 2%;
 }
@@ -316,10 +332,21 @@ body {
   font-weight: bold;
   padding-bottom: 2%;
 }
+@media (max-width: 500px) {
+  .container-resume-home .skills h2 {
+    padding-bottom: 5%;
+    padding-top: 1.5%;
+  }
+}
 .container-resume-home .skills .skills-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+@media (max-width: 500px) {
+  .container-resume-home .skills .skills-list {
+    flex-direction: column;
+  }
 }
 .container-resume-home .skills .skills-list button {
   width: 32%;
@@ -331,6 +358,12 @@ body {
   color: #fff6e6;
   font-size: 1.3rem;
 }
+@media (max-width: 500px) {
+  .container-resume-home .skills .skills-list button {
+    width: 100%;
+    padding: 3%;
+  }
+}
 .container-resume-home .contact {
   padding: 4% 2%;
   border-bottom: 10px solid white;
@@ -341,7 +374,17 @@ body {
   text-transform: uppercase;
   font-weight: bold;
 }
+@media (max-width: 500px) {
+  .container-resume-home .contact h2 {
+    padding-top: 1%;
+  }
+}
 .container-resume-home .contact p {
   font-size: 1.4rem;
   padding: 1.5% 0;
+}
+@media (max-width: 500px) {
+  .container-resume-home .contact p {
+    padding: 4% 0;
+  }
 }
