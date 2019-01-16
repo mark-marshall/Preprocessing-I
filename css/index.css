@@ -215,7 +215,7 @@ body {
   cursor: pointer;
 }
 .container-resume-home .main-content {
-  padding: 2%;
+  padding: 4% 2% 0 2%;
 }
 .container-resume-home .main-content h2 {
   color: #f37d7b;
@@ -229,7 +229,7 @@ body {
   padding: 1.5% 0;
 }
 .container-resume-home .work-exp {
-  padding: 0 2%;
+  padding: 2%;
 }
 .container-resume-home .work-exp h2 {
   color: #f37d7b;
@@ -239,11 +239,16 @@ body {
 }
 .container-resume-home .work-exp table {
   font-size: 1.4rem;
-  width: 95%;
-  margin-top: 1.5%;
+  width: 100%;
+  margin-top: 2%;
 }
 .container-resume-home .work-exp table th,
 .container-resume-home .work-exp table td {
-  padding: 1.5%;
+  padding: 2%;
   text-align: left;
+}
+.container-resume-home .work-exp table th {
+  background: #ffdc9f;
+  color: #f16664;
+  text-transform: uppercase;
 }

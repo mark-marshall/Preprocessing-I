@@ -240,7 +240,7 @@ body {
   }
 
   .main-content {
-    padding: 2%;
+    padding: 4% 2% 0 2%;
     h2 {
       color: lighten(@primary-color, 5%);
       font-size: 1.6rem;
@@ -256,7 +256,7 @@ body {
   }
 
   .work-exp {
-    padding: 0 2%;
+    padding: 2%;
     h2 {
       color: lighten(@primary-color, 5%);
       font-size: 1.6rem;
@@ -265,14 +265,20 @@ body {
     }
     table {
       font-size: 1.4rem;
-      width: 95%;
-      margin-top: 1.5%;
+      width: 100%;
+      margin-top: 2%;
 
       th,
       td {
-        padding: 1.5%;
+        padding: 2%;
         text-align: left;
-      }
+	  }
+	  
+	  th {
+		background: darken(@secondary-color, 14%);
+		color: @primary-color;
+		text-transform: uppercase;
+	  }
     }
   }
 }
