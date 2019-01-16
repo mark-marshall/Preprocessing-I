@@ -145,6 +145,11 @@ body {
   margin: 0 auto;
   font-family: Consolas, Arial, sans-seriff;
 }
+@media (max-width: 500px) {
+  .container-resume-home {
+    color: red;
+  }
+}
 .container-resume-home header {
   height: 30%;
 }
@@ -156,6 +161,11 @@ body {
   background: #f16664;
   padding: 1.5% 0;
   border-bottom: 10px solid white;
+}
+@media (max-width: 500px) {
+  .container-resume-home header nav {
+    padding: 4% 0;
+  }
 }
 .container-resume-home header nav a {
   padding: 1%;
@@ -180,6 +190,12 @@ body {
   font-weight: bold;
   color: #ffdc9f;
 }
+@media (max-width: 500px) {
+  .container-resume-home header .name-divider h1 {
+    font-size: 6rem;
+    text-align: left;
+  }
+}
 .container-resume-home header .profile-picture {
   width: 300px;
   height: 500px;
@@ -187,6 +203,11 @@ body {
 .container-resume-home header .about-introduction {
   display: flex;
   justify-content: space-around;
+}
+@media (max-width: 500px) {
+  .container-resume-home header .about-introduction {
+    flex-direction: column;
+  }
 }
 .container-resume-home header .about-introduction img {
   height: 300px;
@@ -269,6 +290,8 @@ body {
   padding-bottom: 2%;
 }
 .container-resume-home .skills .skills-list {
+  display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 .container-resume-home .skills .skills-list button {
