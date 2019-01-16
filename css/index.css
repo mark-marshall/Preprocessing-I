@@ -258,7 +258,7 @@ body {
   cursor: pointer;
 }
 .container-resume-home .main-content {
-  padding: 8% 2% 0 2%;
+  padding: 6% 2% 0 2%;
 }
 .container-resume-home .main-content h2 {
   color: #f37d7b;
@@ -269,6 +269,7 @@ body {
 @media (max-width: 500px) {
   .container-resume-home .main-content h2 {
     font-size: 2rem;
+    padding-top: 4%;
   }
 }
 .container-resume-home .main-content p {
