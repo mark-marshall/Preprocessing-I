@@ -231,9 +231,47 @@ body {
           padding: 1% 8%;
 
           &:hover {
-            background: darken(@primary-color, 5%);
+            background: darken(@primary-color, 3%);
+            cursor: pointer;
           }
         }
+      }
+    }
+  }
+
+  .main-content {
+    padding: 2%;
+    h2 {
+      color: lighten(@primary-color, 5%);
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 1.6rem;
+      line-height: 1.6;
+      padding: 1.5% 0;
+    }
+  }
+
+  .work-exp {
+    padding: 0 2%;
+    h2 {
+      color: lighten(@primary-color, 5%);
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    table {
+      font-size: 1.4rem;
+      width: 95%;
+      margin-top: 1.5%;
+
+      th,
+      td {
+        padding: 1.5%;
+        text-align: left;
       }
     }
   }

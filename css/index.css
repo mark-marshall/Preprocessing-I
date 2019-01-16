@@ -211,5 +211,39 @@ body {
   padding: 1% 8%;
 }
 .container-resume-home header .about-introduction .about-introduction-text button:hover {
-  background: #ef4f4d;
+  background: #f05856;
+  cursor: pointer;
+}
+.container-resume-home .main-content {
+  padding: 2%;
+}
+.container-resume-home .main-content h2 {
+  color: #f37d7b;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.container-resume-home .main-content p {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  padding: 1.5% 0;
+}
+.container-resume-home .work-exp {
+  padding: 0 2%;
+}
+.container-resume-home .work-exp h2 {
+  color: #f37d7b;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.container-resume-home .work-exp table {
+  font-size: 1.4rem;
+  width: 95%;
+  margin-top: 1.5%;
+}
+.container-resume-home .work-exp table th,
+.container-resume-home .work-exp table td {
+  padding: 1.5%;
+  text-align: left;
 }
