@@ -53,10 +53,55 @@ table {
     box-sizing: border-box;
 }
 
-@color-test: purple;
+// Variables: color pallette
+@primary-color: #F16664;
+@secondar-color: #FFF6E6;
+@accent-color: #007D8C;
+
+// Variables: font family
+@fonts: Consolas, Arial, sans-seriff;
+
+// Mixins
 
 html, body {
 	height: 100%;
-	background-color: @color-test;
+	font-size: 62.5%;
 }
 
+.container-resume-home{
+	background: @secondar-color;
+	max-width: 880px;
+	margin: 0 auto;
+
+	header {
+	height: 30%;
+
+	nav {
+		display: flex;
+		width: 100%;
+		justify-content: flex-end;
+		background: @primary-color;
+		padding: 1.5% 0;
+		border-bottom: 3px solid black;
+
+		a {
+			padding: 1%;
+			width: 15%;
+			text-align: center;
+			color: @secondary-color;
+			font-size: 1.4rem;
+			font-family: @fonts;
+			text-decoration: none;
+
+			&:hover {background: darken(@primary-color, 2%);}
+			border-radius: 5px;
+		}
+	}
+	}
+
+	
+
+
+
+
+}
