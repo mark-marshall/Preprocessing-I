@@ -4,56 +4,410 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
+// Variables: color pallette
+@primary-color: #f16664;
+@secondary-color: #fff6e6;
+@accent-color: #007d8c;
+
+// Variables: font family
+@fonts: Consolas, Arial, sans-seriff;
+
+// Mixins
+
+.h2-styles () {
+  color: lighten(@primary-color, 5%);
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+// Media
+@phone: 500px;
+
+// End of LESS variables/mixin setouts
+
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+}
+
+.container-resume-home {
+  background: @secondary-color;
+  max-width: 880px;
+  margin: 0 auto;
+  font-family: @fonts;
+
+  header {
+    height: 30%;
+
+    nav {
+      .flex-row();
+      width: 100%;
+      justify-content: flex-end;
+      background: @primary-color;
+      padding: 1.5% 0;
+      border-bottom: 10px solid white;
+
+      @media (max-width: @phone) {
+        padding: 4% 2% 4% 0;
+      }
+
+      a {
+        padding: 1%;
+        width: 15%;
+        text-align: center;
+        color: @secondary-color;
+        font-size: 1.4rem;
+        text-decoration: none;
+
+        @media (max-width: 500px) {
+          font-size: 1.6rem;
+        }
+
+        &:hover {
+          background: darken(@primary-color, 2%);
+        }
+        border-radius: 5px;
+      }
+    }
+    .name-divider {
+      border-bottom: 10px solid white;
+
+      h1 {
+        font-size: 8.5rem;
+        text-align: center;
+        padding: 6% 2% 5% 2%;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: darken(@secondary-color, 14%);
+
+        @media (max-width: @phone) {
+          font-size: 4.5rem;
+          text-align: left;
+        }
+      }
+    }
+    .profile-picture {
+      width: 300px;
+      height: 500px;
+    }
+    .about-introduction {
+      display: flex;
+      justify-content: space-around;
+
+      @media (max-width: @phone) {
+        flex-direction: column;
+      }
+
+      img {
+        height: 300px;
+        padding: 1%;
+        border-radius: 2px;
+      }
+
+      .about-introduction-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        @media (max-width: @phone) {
+          align-items: flex-start;
+        }
+
+        p {
+          font-size: 3rem;
+          padding: 12% 8% 0 8%;
+          line-height: 1.5;
+          font-weight: bold;
+          color: lighten(@primary-color, 5%);
+
+          @media (max-width: @phone) {
+            padding: 8% 4% 4% 3%;
+            font-size: 2.8rem;
+          }
+        }
+
+        button {
+          width: 40%;
+          margin-bottom: 5%;
+          background: @primary-color;
+          color: @secondary-color;
+          font-size: 1.8rem;
+          border: none;
+          padding: 1% 8%;
+          border-radius: 2px;
+
+          @media (max-width: @phone) {
+            margin: 0 0 5% 3%;
+          }
+
+          &:hover {
+            background: darken(@primary-color, 3%);
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  .main-content {
+    padding: 6% 2% 0 2%;
+    h2 {
+      .h2-styles();
+
+      @media (max-width: @phone) {
+		font-size: 2rem;
+		padding-top: 4%;
+      }
+    }
+
+    p {
+      font-size: 1.6rem;
+      line-height: 1.6;
+      padding: 1.5% 0;
+
+      @media (max-width: 500px) {
+        padding: 3% 0.5%;
+        line-height: 1.7;
+      }
+    }
+  }
+
+  .work-exp {
+    padding: 4% 2%;
+    h2 {
+      .h2-styles();
+
+      @media (max-width: @phone) {
+        font-size: 2rem;
+        padding-top: 5%;
+      }
+    }
+    table {
+      font-size: 1.4rem;
+      width: 100%;
+      margin-top: 2%;
+
+      @media (max-width: @phone) {
+        font-size: 1rem;
+        margin-top: 5%;
+      }
+
+      th,
+      td {
+        padding: 2%;
+        text-align: left;
+      }
+
+      th {
+        background: darken(@secondary-color, 14%);
+        color: @primary-color;
+        text-transform: uppercase;
+
+        @media (max-width: @phone) {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .skills {
+    padding: 1.5% 2%;
+
+    h2 {
+      .h2-styles();
+      padding-bottom: 2%;
+
+      @media (max-width: @phone) {
+        padding-bottom: 5%;
+        padding-top: 5%;
+        font-size: 2rem;
+      }
+    }
+
+    .skills-list {
+      .flex-row();
+      flex-wrap: wrap;
+
+      @media (max-width: @phone) {
+        flex-direction: column;
+      }
+
+      button {
+        width: 32%;
+        background: @primary-color;
+        padding: 2%;
+        border-radius: 2px;
+        border: none;
+        margin: 0.5%;
+        color: @secondary-color;
+        font-size: 1.3rem;
+
+        @media (max-width: @phone) {
+          width: 100%;
+          padding: 3%;
+          font-size: 1.7rem;
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  .contact {
+    padding: 4% 2%;
+    border-bottom: 10px solid white;
+
+    h2 {
+      .h2-styles();
+      @media (max-width: @phone) {
+        padding-top: 5%;
+        font-size: 2rem;
+      }
+    }
+    p {
+      font-size: 1.4rem;
+      padding: 1.5% 0;
+
+      @media (max-width: @phone) {
+        padding: 4% 0 5% 0;
+      }
+    }
+  }
+}

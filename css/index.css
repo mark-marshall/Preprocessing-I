@@ -1,1 +1,396 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+}
+.container-resume-home {
+  background: #fff6e6;
+  max-width: 880px;
+  margin: 0 auto;
+  font-family: Consolas, Arial, sans-seriff;
+}
+.container-resume-home header {
+  height: 30%;
+}
+.container-resume-home header nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-end;
+  background: #f16664;
+  padding: 1.5% 0;
+  border-bottom: 10px solid white;
+}
+@media (max-width: 500px) {
+  .container-resume-home header nav {
+    padding: 4% 2% 4% 0;
+  }
+}
+.container-resume-home header nav a {
+  padding: 1%;
+  width: 15%;
+  text-align: center;
+  color: #fff6e6;
+  font-size: 1.4rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+@media (max-width: 500px) {
+  .container-resume-home header nav a {
+    font-size: 1.6rem;
+  }
+}
+.container-resume-home header nav a:hover {
+  background: #f05d5b;
+}
+.container-resume-home header .name-divider {
+  border-bottom: 10px solid white;
+}
+.container-resume-home header .name-divider h1 {
+  font-size: 8.5rem;
+  text-align: center;
+  padding: 6% 2% 5% 2%;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #ffdc9f;
+}
+@media (max-width: 500px) {
+  .container-resume-home header .name-divider h1 {
+    font-size: 4.5rem;
+    text-align: left;
+  }
+}
+.container-resume-home header .profile-picture {
+  width: 300px;
+  height: 500px;
+}
+.container-resume-home header .about-introduction {
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 500px) {
+  .container-resume-home header .about-introduction {
+    flex-direction: column;
+  }
+}
+.container-resume-home header .about-introduction img {
+  height: 300px;
+  padding: 1%;
+  border-radius: 2px;
+}
+.container-resume-home header .about-introduction .about-introduction-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .container-resume-home header .about-introduction .about-introduction-text {
+    align-items: flex-start;
+  }
+}
+.container-resume-home header .about-introduction .about-introduction-text p {
+  font-size: 3rem;
+  padding: 12% 8% 0 8%;
+  line-height: 1.5;
+  font-weight: bold;
+  color: #f37d7b;
+}
+@media (max-width: 500px) {
+  .container-resume-home header .about-introduction .about-introduction-text p {
+    padding: 8% 4% 4% 3%;
+    font-size: 2.8rem;
+  }
+}
+.container-resume-home header .about-introduction .about-introduction-text button {
+  width: 40%;
+  margin-bottom: 5%;
+  background: #f16664;
+  color: #fff6e6;
+  font-size: 1.8rem;
+  border: none;
+  padding: 1% 8%;
+  border-radius: 2px;
+}
+@media (max-width: 500px) {
+  .container-resume-home header .about-introduction .about-introduction-text button {
+    margin: 0 0 5% 3%;
+  }
+}
+.container-resume-home header .about-introduction .about-introduction-text button:hover {
+  background: #f05856;
+  cursor: pointer;
+}
+.container-resume-home .main-content {
+  padding: 6% 2% 0 2%;
+}
+.container-resume-home .main-content h2 {
+  color: #f37d7b;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+@media (max-width: 500px) {
+  .container-resume-home .main-content h2 {
+    font-size: 2rem;
+    padding-top: 4%;
+  }
+}
+.container-resume-home .main-content p {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  padding: 1.5% 0;
+}
+@media (max-width: 500px) {
+  .container-resume-home .main-content p {
+    padding: 3% 0.5%;
+    line-height: 1.7;
+  }
+}
+.container-resume-home .work-exp {
+  padding: 4% 2%;
+}
+.container-resume-home .work-exp h2 {
+  color: #f37d7b;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+@media (max-width: 500px) {
+  .container-resume-home .work-exp h2 {
+    font-size: 2rem;
+    padding-top: 5%;
+  }
+}
+.container-resume-home .work-exp table {
+  font-size: 1.4rem;
+  width: 100%;
+  margin-top: 2%;
+}
+@media (max-width: 500px) {
+  .container-resume-home .work-exp table {
+    font-size: 1rem;
+    margin-top: 5%;
+  }
+}
+.container-resume-home .work-exp table th,
+.container-resume-home .work-exp table td {
+  padding: 2%;
+  text-align: left;
+}
+.container-resume-home .work-exp table th {
+  background: #ffdc9f;
+  color: #f16664;
+  text-transform: uppercase;
+}
+@media (max-width: 500px) {
+  .container-resume-home .work-exp table th {
+    font-weight: bold;
+  }
+}
+.container-resume-home .skills {
+  padding: 1.5% 2%;
+}
+.container-resume-home .skills h2 {
+  color: #f37d7b;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-bottom: 2%;
+}
+@media (max-width: 500px) {
+  .container-resume-home .skills h2 {
+    padding-bottom: 5%;
+    padding-top: 5%;
+    font-size: 2rem;
+  }
+}
+.container-resume-home .skills .skills-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+@media (max-width: 500px) {
+  .container-resume-home .skills .skills-list {
+    flex-direction: column;
+  }
+}
+.container-resume-home .skills .skills-list button {
+  width: 32%;
+  background: #f16664;
+  padding: 2%;
+  border-radius: 2px;
+  border: none;
+  margin: 0.5%;
+  color: #fff6e6;
+  font-size: 1.3rem;
+}
+@media (max-width: 500px) {
+  .container-resume-home .skills .skills-list button {
+    width: 100%;
+    padding: 3%;
+    font-size: 1.7rem;
+    text-align: left;
+  }
+}
+.container-resume-home .contact {
+  padding: 4% 2%;
+  border-bottom: 10px solid white;
+}
+.container-resume-home .contact h2 {
+  color: #f37d7b;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+@media (max-width: 500px) {
+  .container-resume-home .contact h2 {
+    padding-top: 5%;
+    font-size: 2rem;
+  }
+}
+.container-resume-home .contact p {
+  font-size: 1.4rem;
+  padding: 1.5% 0;
+}
+@media (max-width: 500px) {
+  .container-resume-home .contact p {
+    padding: 4% 0 5% 0;
+  }
+}
